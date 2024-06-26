@@ -1,0 +1,101 @@
+plugins {
+    id 'com.android.application' // Plugin untuk aplikasi Android
+    id 'org.jetbrains.kotlin.android' // Plugin Kotlin untuk Android
+    id 'kotlin-parcelize' // Plugin Kotlin Parcelize
+    id 'kotlin-kapt' // Plugin Kotlin Annotation Processing Tool
+}
+
+android {
+    namespace "com.rangganf.githubuserbangkit" // Namespace aplikasi Anda
+    compileSdk = 34 // Versi SDK yang digunakan
+
+    defaultConfig {
+        applicationId = "com.rangganf.githubuserbangkit" // ID aplikasi
+        minSdk = 21 // Versi minimum SDK yang dibutuhkan
+        targetSdk = 32 // Versi SDK yang ditargetkan
+        versionCode = 1 // Kode versi aplikasi
+        versionName = "1.0" // Nama versi aplikasi
+
+        // Konfigurasi BuildConfigField
+        buildConfigField("String", "API_URL", '"https://api.github.com/"') // URL API
+        buildConfigField("String", "TOKEN", '"YOUR_API_KEY"') // Token API
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner" // Runner untuk tes unit
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false // Tidak melakukan minifikasi kode
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        // Konfigurasi kompatibilitas Java
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        // Konfigurasi versi JVM untuk Kotlin
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        // Mengaktifkan View Binding
+        viewBinding true
+        // Mengaktifkan BuildConfig
+        buildConfig true
+    }
+
+    namespace 'com.rangganf.githubuserbangkit'
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0' // Dukungan versi lama Android
+    def lifecycle_version = '2.7.0-alpha02' // Versi Komponen Siklus Hidup
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version" // ViewModel KTX
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version" // ViewModel Compose
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version" // LiveData KTX
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version" // Komponen Siklus Hidup KTX
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version" // ViewModel SavedState
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version" // Kompiler Siklus Hidup
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version" // Kompatibilitas Java 8
+
+    implementation('io.coil-kt:coil:2.4.0') // Pustaka Coil untuk tampilan gambar
+    implementation 'com.google.code.gson:gson:2.10.1' // Pustaka Gson untuk serialisasi/deserialisasi JSON
+    implementation 'com.github.ivbaranov:materialfavoritebutton:0.1.5'
+
+    implementation 'androidx.activity:activity-ktx:1.7.2' // Activity KTX
+    implementation 'androidx.fragment:fragment-ktx:1.6.1' // Fragment KTX
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0' // Retrofit HTTP client
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0' // Konverter Gson untuk Retrofit
+
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.3" // Interceptor OkHttp untuk logging
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3' // Kotlin Coroutines untuk Android
+
+    def room_version = '2.5.2' // Versi Room Database
+
+    implementation "androidx.room:room-runtime:$room_version" // Komponen Room Runtime
+    kapt "androidx.room:room-compiler:$room_version" // Kompiler Room
+    implementation "androidx.room:room-rxjava3:$room_version" // Room RxJava3
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+
+    implementation 'androidx.core:core-ktx:1.12.0' // Core KTX
+    implementation 'androidx.appcompat:appcompat:1.6.1' // AppCompat
+    implementation 'com.google.android.material:material:1.9.0' // Material Design
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // ConstraintLayout
+    implementation 'de.hdodenhof:circleimageview:3.1.0' // CircleImageView
+    testImplementation 'junit:junit:4.13.2' // JUnit untuk tes unit
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5' // JUnit untuk tes Android
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1' // Espresso
+
+    implementation "androidx.datastore:datastore-preferences-core:1.0.0" // DataStore Core
+    implementation "androidx.datastore:datastore-preferences:1.0.0" // DataStore Preferences
+}

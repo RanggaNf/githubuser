@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow_200">#CE9505</color>
+    <color name="brown_500">#221C11</color>
+    <color name="brown_700">#231111</color>
+    <color name="teal_200">#2178BC</color>
+    <color name="teal_700">#2178BC</color>
+    <color name="colorPrimary">#575757</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#F44336</color>
+    <color name="switch_background_color">#9A888888</color>
+    <color name="switch_border_color">#FF0000</color>
+    <color name="primary_gray">#6B727C</color>
+    <color name="primary_black">#FF010409</color>
+    <color name="secondary_gray">#696F78</color>
+    <color name="stroke_gray">#FF2A2F36</color>
+    <color name="detail_text">#FFD9CFCD</color>
+    <color name="actionBarBackgroundDay">#9C9C9C</color>
+    <color name="actionBarBackgroundNight">@color/yellow_200</color>
+
+</resources>

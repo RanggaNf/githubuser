@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">User Github Dicoding</string>
+    <string name="detail">Detail</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="favorite">Favorite</string>
+    <string name="setting">Setting</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="repository">Repositories</string>
+    <string name="follower">Followers </string>
+    <string name="not_found">Pengguna Tidak Di temukan, mohon masukan nama pengguna dengan benar</string>
+    <string name="id_account">ID GitHub</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Masukkan username</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="id_prefix">Id: </string>
+
+</resources>
