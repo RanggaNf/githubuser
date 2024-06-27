@@ -1,6 +1,7 @@
 # GitHub User Explorer
 
-![GitHub User Explorer Banner](link_ke_banner_anda.png)
+![image](https://github.com/RanggaNf/githubuser/assets/142804080/2c471802-0591-43c6-b4be-0ad496a48eb3)
+
 
 GitHub User Explorer adalah aplikasi Android yang memungkinkan pengguna untuk menjelajahi profil pengguna GitHub dengan antarmuka yang menarik dan fitur-fitur berguna.
 
