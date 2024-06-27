@@ -73,7 +73,7 @@ Linkedin - [@rangfaziii](https://www.linkedin.com/in/rangfaziii/)
 
 Website: [www.rangfaziii.com](http://www.rangfaziii.com)
 
-Project Link: [https://github.com/username_anda/github-user-explorer](https://github.com/username_anda/github-user-explorer)
+Project Link: [https://github.com/RanggaNf/githubuser/tree/main](https://github.com/RanggaNf/githubuser/tree/main)
 
 ## Acknowledgments
 
